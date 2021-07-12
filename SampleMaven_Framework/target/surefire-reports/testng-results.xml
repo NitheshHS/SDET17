@@ -1,27 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-09T11:54:37Z" name="Suite" finished-at="2021-07-09T11:54:37Z" duration-ms="98">
+  <suite name="Command line suite" duration-ms="19216" started-at="2021-07-12T11:23:53Z" finished-at="2021-07-12T11:24:12Z">
     <groups>
+      <group name="regressionTest">
+        <method signature="CreateProductTest.createProductWithId()[pri:0, instance:com.crm.vtiger.ProductTest.CreateProductTest@6bf256fa]" name="createProductWithId" class="com.crm.vtiger.ProductTest.CreateProductTest"/>
+        <method signature="SearchProductTest.searchProductWithId()[pri:0, instance:com.crm.vtiger.ProductTest.SearchProductTest@6cd8737]" name="searchProductWithId" class="com.crm.vtiger.ProductTest.SearchProductTest"/>
+      </group> <!-- regressionTest -->
       <group name="smokeTest">
-        <method signature="CreateProductTest.createProductWithNameTest()[pri:0, instance:com.crm.vtiger.ProductTest.CreateProductTest@34f5090e]" name="createProductWithNameTest" class="com.crm.vtiger.ProductTest.CreateProductTest"/>
-        <method signature="SearchProductTest.searchProductWithNameTest()[pri:0, instance:com.crm.vtiger.ProductTest.SearchProductTest@31e5415e]" name="searchProductWithNameTest" class="com.crm.vtiger.ProductTest.SearchProductTest"/>
+        <method signature="CreateProductTest.createProductWithNameTest()[pri:0, instance:com.crm.vtiger.ProductTest.CreateProductTest@6bf256fa]" name="createProductWithNameTest" class="com.crm.vtiger.ProductTest.CreateProductTest"/>
+        <method signature="SearchProductTest.searchProductWithNameTest()[pri:0, instance:com.crm.vtiger.ProductTest.SearchProductTest@6cd8737]" name="searchProductWithNameTest" class="com.crm.vtiger.ProductTest.SearchProductTest"/>
       </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2021-07-09T11:54:37Z" name="Test" finished-at="2021-07-09T11:54:37Z" duration-ms="98">
+    <test name="Command line test" duration-ms="19216" started-at="2021-07-12T11:23:53Z" finished-at="2021-07-12T11:24:12Z">
+      <class name="com.crm.vtiger.organization.CreateOrgTest">
+        <test-method status="PASS" signature="createOrgTest()[pri:0, instance:com.crm.vtiger.organization.CreateOrgTest@1554909b]" name="createOrgTest" duration-ms="19089" started-at="2021-07-12T11:23:53Z" finished-at="2021-07-12T11:24:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrgTest -->
+      </class> <!-- com.crm.vtiger.organization.CreateOrgTest -->
       <class name="com.crm.vtiger.ProductTest.SearchProductTest">
-        <test-method signature="searchProductWithNameTest()[pri:0, instance:com.crm.vtiger.ProductTest.SearchProductTest@31e5415e]" started-at="2021-07-09T11:54:37Z" name="searchProductWithNameTest" finished-at="2021-07-09T11:54:37Z" duration-ms="0" status="PASS">
+        <test-method status="PASS" signature="searchProductWithId()[pri:0, instance:com.crm.vtiger.ProductTest.SearchProductTest@6cd8737]" name="searchProductWithId" duration-ms="0" started-at="2021-07-12T11:24:12Z" finished-at="2021-07-12T11:24:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductWithId -->
+        <test-method status="PASS" signature="searchProductWithNameTest()[pri:0, instance:com.crm.vtiger.ProductTest.SearchProductTest@6cd8737]" name="searchProductWithNameTest" duration-ms="1" started-at="2021-07-12T11:24:12Z" finished-at="2021-07-12T11:24:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchProductWithNameTest -->
       </class> <!-- com.crm.vtiger.ProductTest.SearchProductTest -->
       <class name="com.crm.vtiger.ProductTest.CreateProductTest">
-        <test-method signature="createProductWithNameTest()[pri:0, instance:com.crm.vtiger.ProductTest.CreateProductTest@34f5090e]" started-at="2021-07-09T11:54:37Z" name="createProductWithNameTest" finished-at="2021-07-09T11:54:37Z" duration-ms="17" status="PASS">
+        <test-method status="PASS" signature="createProductWithId()[pri:0, instance:com.crm.vtiger.ProductTest.CreateProductTest@6bf256fa]" name="createProductWithId" duration-ms="0" started-at="2021-07-12T11:24:12Z" finished-at="2021-07-12T11:24:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProductWithId -->
+        <test-method status="PASS" signature="createProductWithNameTest()[pri:0, instance:com.crm.vtiger.ProductTest.CreateProductTest@6bf256fa]" name="createProductWithNameTest" duration-ms="0" started-at="2021-07-12T11:24:12Z" finished-at="2021-07-12T11:24:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createProductWithNameTest -->
       </class> <!-- com.crm.vtiger.ProductTest.CreateProductTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
 </testng-results>
