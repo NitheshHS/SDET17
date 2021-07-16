@@ -1,5 +1,8 @@
 package com.crm.vtiger.organization;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -37,6 +40,19 @@ public class CreateOrgTest {
 		System.out.println(driver.getTitle());
 		driver.close();
 		
+	}
+	
+	@Test
+	public void formateDate() {
+		SimpleDateFormat date = new SimpleDateFormat("dd MMM yyyy");
+		String sysDate = date.format(new Date());
+		System.out.println(sysDate);
+		
+		Calendar cal = Calendar.getInstance();
+		cal.add(Calendar.YEAR, 1);
+		Date newDate = cal.getTime();
+		String syDate=date.format(newDate);
+		System.out.println(syDate);
 	}
 
 }
